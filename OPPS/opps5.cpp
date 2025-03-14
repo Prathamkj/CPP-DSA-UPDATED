@@ -14,7 +14,7 @@ public:
 // Multilevel Inheritance 
 class GradSudent : public Student{
 public:
-    string researchArea;
+    string researcharea;
 };
 // Multilevel Inheritance 
 
