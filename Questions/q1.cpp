@@ -14,8 +14,6 @@ int SumandProduct(int n){
     int answer = product - sum;
     return answer;
 }
-
-
 int main(){
    
     cout<<SumandProduct(12345)<<endl;

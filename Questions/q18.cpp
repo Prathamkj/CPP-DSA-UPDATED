@@ -57,7 +57,7 @@ int LastOccurance(int array[], int target, int size)
 
 int main()
 {
-    int array[8] = {0, 0, 1, 1, 2, 2, 2, 2};
+    int array[8] = {0, 0, 1, 1, 4, 4, 2, 2};
 
     int target = 2;
 

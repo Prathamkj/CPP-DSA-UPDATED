@@ -60,3 +60,33 @@ int main(){
     print(array3 , 8);
 
 }
+
+// 2nd Approachh
+class Solution {
+    public:
+        void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
+            // n and m are the sizes of the array
+            int index = m + n - 1;
+            int i = m - 1;
+            // here we are applying the backward loop so that's why we are taking last index
+            int j = n - 1;
+            while( i >= 0 && j>= 0){
+                if(nums1[i] <= nums2[j]){
+                    nums1[index] = nums2[j];
+                    // 1 st array me dalna hai toh nums1 
+                    index--;
+                    j--;
+                }
+                else{
+                    nums1[index] = nums1[i];
+                    i--;
+                    index--;
+                }
+            }
+            while( j>=0 ){
+                nums1[index] = nums2[j];
+                index--;
+                j--;
+            }
+        }
+    };

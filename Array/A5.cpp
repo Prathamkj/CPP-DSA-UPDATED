@@ -3,6 +3,7 @@
 using namespace std;
 void reverseArray(int array[], int size)
 {
+    // reversing the array bro
     int start = 0;
     // start 0 se
     int end = size - 1;
@@ -10,6 +11,7 @@ void reverseArray(int array[], int size)
     while (start < end)
     {
         swap(array[start], array[end]);
+        // swap kar diya bhaii
         // swap
         start++;
         end--;
