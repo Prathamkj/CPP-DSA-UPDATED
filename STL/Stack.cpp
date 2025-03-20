@@ -24,6 +24,7 @@ int main(){
         // top ko print karwayee and woh pop bhi ho jaye
         s.pop();
     }
+
     cout<<endl;
 
 

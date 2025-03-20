@@ -1,1 +1,1 @@
-e
+out<<s.top()<<endl;

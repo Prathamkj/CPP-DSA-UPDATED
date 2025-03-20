@@ -15,6 +15,8 @@ int main(){
     m.emplace("camera" ,133);
     // erase kar dega
     m.erase("tv");
+    // to insert into the map
+    m.insert({{"Samsung",1999}, {"One Plus",333}});
     // loop for data printing
     // pair data hai isliye auto use kiya
     for(auto p: m){

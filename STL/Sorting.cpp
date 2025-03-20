@@ -4,7 +4,6 @@ int main(){
     // sort functions for sorting
     int arr[4] ={4,3,2,1};
     sort(arr.begin(), arr.end());
-
     sort(arr,arr + n);
     // n=4
 

@@ -10,6 +10,7 @@ int main(){
 vector<int> vec = {1,2,3,4,5};
 //  vector iterator
 vector<int>::iterator it;
+vector<int>::iterator iter;
 // it naam ka iterator banaya
 // Forward loop
 for(it = vec.begin(); it!=vec.end(); it++){
@@ -21,7 +22,9 @@ cout<<endl;
 for(auto iy = vec.rbegin(); iy!=vec.rend(); iy++){
     cout<<*(iy)<<endl;
 }
-
+for(auto iter = vec.begin(); iter!=vec.end(); iter++){
+    cout<<iter<<"iterator"
+}
 // so we can use auto keyword instead of vector<int>::iterator line
 // for( auto it = vec.begin(); it!=vec.end(); it){
 //     cout<<*(it)<<endl;
