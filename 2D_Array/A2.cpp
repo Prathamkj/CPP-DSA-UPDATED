@@ -18,13 +18,30 @@ int maxRowSum(int arr[4][3] , int rows , int cols){
     int maxRowSum = INT16_MIN;
     for(int i = 0; i < rows; i++){
         int Row = 0;
-        for(int j = 0;i< cols; j++){
+        for(int j = 0;j< cols; j++){
             Row = Row + arr[i][j];
         }
         maxRowSum = max(maxRowSum,Row);
     }
     return maxRowSum;
 }
+// Maximum column sum
+int maxColumnSum(int arr[4][3], int rows, int cols) {
+    int maxColSum = INT_MIN;  // Initialize maxColSum to a very small value
+    
+    for (int j = 0; j < cols; j++) {  // Iterate over each column
+        int colSum = 0;  // Variable to store sum of current column
+        
+        for (int i = 0; i < rows; i++) {  // Iterate over each row
+            colSum += arr[i][j];  // Add element to column sum
+        }
+
+        maxColSum = max(maxColSum, colSum);  // Update maxColSum if current column sum is greater
+    }
+
+    return maxColSum;  // Return the maximum column sum found
+}
+// 
 
 // To print the Row Sum of each row in the matrix
 void printRowSum(int arr[][3], int rows , int cols){
