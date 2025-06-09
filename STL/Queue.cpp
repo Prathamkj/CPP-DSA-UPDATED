@@ -12,4 +12,8 @@ int main(){
         cout<<q.front()<<" ";
         q.pop();
     }
+
+    // Accessing the front and back elements
+    cout << q.front() << endl;
+    cout << q.back() << endl;
 }
