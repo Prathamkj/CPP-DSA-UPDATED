@@ -16,6 +16,10 @@ vector<int>::iterator iter;
 for(it = vec.begin(); it!=vec.end(); it++){
     cout<<*(it)<<endl;
 }
+// Another Example of vector iterator
+for(auto iter = vec.begin(); iter!=vec.end(); iter++){
+    cout<<*(iter)<<endl;
+}   
 cout<<endl;
 // Backward Loop
 // Reverse itterator
