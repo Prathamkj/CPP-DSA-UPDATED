@@ -13,6 +13,7 @@ int main(){
     m["Apple"] = 1000;
     // Add -> emplace
     m.emplace("camera" ,133);
+    m.emplace("mobile_phone",100000);
     // erase kar dega
     m.erase("tv");
     // to insert into the map

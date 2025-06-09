@@ -19,4 +19,10 @@ int main()
         cout<<pq.top()<<" ";
         pq.pop();
     }
+    // of in for loop 
+    for (; !pq.empty(); pq.pop())
+    {
+    cout << pq.top() << " ";
+    }
+
 }
