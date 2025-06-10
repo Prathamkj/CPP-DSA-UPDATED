@@ -8,8 +8,10 @@ int main()
 {
     string str;
     cout << " Enter the string ";
-
+    string string;
+    // string is a class in c++
     getline(cin, str);
+    getline(cin, string);
     // to input tthe string
 
     cout << str << endl;
@@ -17,7 +19,7 @@ int main()
     // dynamic in nature
 
     string str1 = "krishna";
-
+    // Assing the value too the string= str1
     string str2 = str + str1;
     // concatenation of strings
 

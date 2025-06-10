@@ -13,7 +13,7 @@ bool Palindrome(){
         if(!isAlpha(str[s])){
             s++;
             continue;
-        } mn
+        }
         if(!isAlpha(str[e])){
             e--;
             continue;
