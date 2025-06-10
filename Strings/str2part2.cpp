@@ -13,6 +13,8 @@ char getMaxOccCharacter(const string &str) {
         {
             ch = tolower(ch);    // Convert uppercase letter to lowercase
             count[ch - 'a']++;   // Increment count for this letter
+
+            // isme sare ke sare characters ka count store kar ke rakha hai bhai
         }
     }
 
