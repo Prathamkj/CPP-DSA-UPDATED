@@ -1,0 +1,23 @@
+✅ Top 20 Easy String Questions for Placements
+
+#	Problem Name	Key Concepts
+1	Reverse a String	Two-pointer / Built-in reverse
+2	Check for Palindrome	Start-End pointer or reverse-compare
+3	Remove All Duplicates from a String	Stack or string building
+4	Check if Two Strings are Anagrams	Frequency count / Sorting
+5	First Non-Repeating Character	Hashmap for count + index
+6	Count and Say Problem	Recursion + string manipulation
+7	Longest Common Prefix	Vertical/horizontal scanning
+8	Valid Parentheses	Stack
+9	Implement strStr() (Substring search)	Sliding window / Brute force
+10	Check if Strings are Rotations	Concatenation trick
+11	Remove All Occurrences of a Substring	Loop + erase / recursion
+12	Find the First Occurrence of a Character	Simple iteration
+13	Convert Lowercase to Uppercase (and vice versa)	ASCII math
+14	Count Vowels and Consonants	Set check
+15	Maximum Occurring Character	Frequency map
+16	Toggle Characters Case	ASCII or built-in functions
+17	String Compression (like Leetcode 443)	Two pointers
+18	Print All Substrings of a String	Nested loops
+19	Check if a String Contains Only Digits	isdigit() / ASCII check
+20	Reverse Words in a String	Split + reverse
