@@ -31,3 +31,34 @@ public:
     }
 };
 
+
+Input: s = "[{()}]"
+Output: true
+Explanation: All the brackets are well-formed.
+
+class Solution {
+public:
+    bool isBalanced(string s) {
+        string stack = "";
+
+        for(char ch : s) {
+            if(ch == '(' || ch == '{' || ch == '[') {
+                stack += ch;
+            } else {
+                if(stack.empty()) return false;
+
+                char last = stack.back();
+                if((ch == ')' && last == '(') ||
+                   (ch == '}' && last == '{') ||
+                   (ch == ']' && last == '[')) {
+                    stack.pop_back();
+                } else {
+                    return false;
+                }
+            }
+        }
+
+        return stack.empty();
+    }
+};
+
