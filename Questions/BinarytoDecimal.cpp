@@ -17,3 +17,21 @@ int main(){
     cout<<ans<<endl;
     return 0;
 }
+// Gfg Solution of the function
+class Solution {
+  public:
+    int binaryToDecimal(string &b) {
+        int result = 0;
+        int power = 0;
+
+        // Traverse from the rightmost bit to left
+        for (int i = b.length() - 1; i >= 0; --i) {
+            if (b[i] == '1') {
+                result += (1 << power);  // 2^power
+            }
+            power++;
+        }
+
+        return result;
+    }
+};
