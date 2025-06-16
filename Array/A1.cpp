@@ -3,6 +3,7 @@ using namespace std;
 int main(){
     // Array
     int marks[5] = {0,1,88,3,4};
+    int age[5] = {0,1,2,3,3};
     // Acess the data we use array indexes
     cout<<marks[2];
     // loop on array
