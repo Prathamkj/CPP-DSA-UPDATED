@@ -41,3 +41,16 @@ int hammingWeight(int n) {
     return count;
 }
 };
+// 3rd Method
+// Sabse Easy Method Bhaisabhh
+class Solution {
+  public:
+    int setBits(int n) {
+        int count = 0;
+        while (n > 0) {
+            if (n % 2 == 1) count++;  // or: count += n % 2;
+            n = n / 2;
+        }
+        return count;
+    }
+};
