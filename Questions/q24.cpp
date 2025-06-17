@@ -40,6 +40,44 @@ void merge(int array1[], int n , int array2[] , int m , int array3[]){
 
     }
 }
+// Same witt Vectorrr
+class Solution {
+  public:
+    vector<int> mergeArrays(vector<int>& a, vector<int>& b) {
+        int n = a.size();
+        int m = b.size();
+        int i = 0, j = 0;
+        vector<int> ans;
+
+        // Merge the arrays
+        while(i < n && j < m) {
+            if(a[i] < b[j]) {
+                ans.push_back(a[i]);
+                i++;
+            } else {
+                ans.push_back(b[j]);
+                j++;
+            }
+        }
+
+        // Add remaining elements from a
+        while(i < n) {
+            ans.push_back(a[i]);
+            i++;
+        }
+
+        // Add remaining elements from b
+        while(j < m) {
+            ans.push_back(b[j]);
+            j++;
+        }
+        
+        return ans;
+    }
+};
+
+
+
 
 void print(int array3[] , int n){
     for(int i=0; i<n; i++){
