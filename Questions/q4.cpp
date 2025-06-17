@@ -33,17 +33,20 @@ public:
     }
 };*/
 
-// 3rd Method
+// User function Template for C++
+
 class Solution {
-    public:
-        bool isPowerOfTwo(int n) {
-            if(n==0)return false;
-            
-            while(n>0){
-                if(n==1)return true;
-                if(n %2 !=0)break;
-                n /=2;
-            }
+  public:
+    // Function to check if given number n is a power of two.
+    bool isPowerofTwo(int n) {
+        if(n==0) {
             return false;
         }
-    };
+        while (n > 0){
+            if(n==1) return true;
+            if(n % 2 != 0) break;
+            n = n /2;
+        }
+        return false;
+    }
+};
