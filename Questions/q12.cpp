@@ -37,6 +37,7 @@ public:
         {
             if(st.count(nums[i]))
             {
+                // Jo bhi elements set se nikal gye hai unko vector me push kardiya bhaiya jii kii
                 //if element if present
                 v.push_back(nums[i]);
             }
