@@ -22,3 +22,19 @@ int main(){
     int n = 5;
     cout<<PrintSubArray(arr , n);
 }
+
+Example of Subarray tha how it is printing
+arr = {1, 2, 3}
+Step-by-step output:
+Start = 0, End = 0 → print 1
+
+Start = 0, End = 1 → print 1 2
+
+Start = 0, End = 2 → print 1 2 3
+
+Start = 1, End = 1 → print 2
+
+Start = 1, End = 2 → print 2 3
+
+Start = 2, End = 2 → print 3
+
