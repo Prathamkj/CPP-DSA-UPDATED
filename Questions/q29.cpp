@@ -16,7 +16,7 @@ int PrintSubArray(int arr[], int n){
         }
     }
 }
-
+// This code is for printingg all the subarrays
 int main(){
     int arr[5] = {1,2,3,4,5};
     int n = 5;
