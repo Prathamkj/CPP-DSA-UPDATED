@@ -25,6 +25,16 @@ int maxRowSum(int arr[4][3] , int rows , int cols){
     }
     return maxRowSum;
 }
+/*
+Outer loop (i) iterates through each row.
+
+Inner loop (j) goes through each element in that row.
+
+Row keeps the sum of elements in the current row.
+
+After each row, update maxRowSum if Row is greater.
+
+*/
 // Maximum column sum
 int maxColumnSum(int arr[4][3], int rows, int cols) {
     int maxColSum = INT_MIN;  // Initialize maxColSum to a very small value
@@ -41,7 +51,15 @@ int maxColumnSum(int arr[4][3], int rows, int cols) {
 
     return maxColSum;  // Return the maximum column sum found
 }
-// 
+/*
+Outer loop (j) iterates through each column.
+
+Inner loop (i) collects elements vertically from each row in that column.
+
+colSum stores the sum of that column.
+
+Update maxColSum accordingly.
+*/
 
 // To print the Row Sum of each row in the matrix
 void printRowSum(int arr[][3], int rows , int cols){
