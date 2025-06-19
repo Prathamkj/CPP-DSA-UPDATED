@@ -1,0 +1,18 @@
+✅ Top 15 Most Important 2D Array Interview Problems
+
+#	Problem Name	Difficulty	Concept	Link
+1	Search a 2D Matrix	Easy	Binary Search	🔗 LeetCode #74
+2	Transpose Matrix	Easy	Basic Matrix Swap	🔗 LeetCode #867
+3	Set Matrix Zeroes	Medium (low)	In-place Update	🔗 LeetCode #73
+4	Spiral Matrix	Medium (low)	Simulation	🔗 LeetCode #54
+5	Spiral Matrix II	Medium (low)	Simulation / Fill	🔗 LeetCode #59
+6	Diagonal Traverse	Medium (low)	Index Pattern	🔗 LeetCode #498
+7	Search a 2D Matrix II	Medium (low)	Search Optimization	🔗 LeetCode #240
+8	Matrix Diagonal Sum	Easy	Simple Traversal	🔗 LeetCode #1572
+9	Rotate Image (90° Clockwise)	Medium (low)	Matrix Rotation	🔗 LeetCode #48
+10	Flip and Invert Image	Easy	Basic Simulation	🔗 LeetCode #832
+11	Number of Islands	Medium	DFS / BFS	🔗 LeetCode #200
+12	Max Area of Island	Medium (low)	DFS	🔗 LeetCode #695
+13	Minimum Path Sum	Medium (low)	DP (Bottom-up)	🔗 LeetCode #64
+14	Unique Paths	Medium (low)	DP / Combinatorics	🔗 LeetCode #62
+15	Flood Fill Algorithm	Easy	DFS / BFS	🔗 LeetCode #733
