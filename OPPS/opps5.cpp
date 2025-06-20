@@ -6,11 +6,15 @@ public:
     string name;
     int age;
 };
+// Student is a child for Person
 class Student : public Person{
 public:
     int rollno;
-
 };
+
+// Now GradStudent is a child of Student
+// so it's called Multilevel inheritance
+
 // Multilevel Inheritance 
 class GradSudent : public Student{
 public:
@@ -25,6 +29,7 @@ public:
     string dept;
     string subject;
 };
+// Here we passes the multiple classes
 class TA : public Student, public Teacher{
     // ye dono class ke properties ko inherit kar rahi hai
 public:
