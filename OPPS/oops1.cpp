@@ -7,6 +7,7 @@ class Teacher{
 // if we want to create particular private 
 private: 
     double salary;
+    int pension;
 public:
 // Agar yaha par private hota tha toh hum ise accesss nhi kar pate the
     // properties of class / Arrributes of class
@@ -25,6 +26,12 @@ public:
     void setSalary(int s){
         salary = s;
     }
+    // // Making another setter function
+    // void setPension(int n){
+    //     pension = n;
+    //     // pension ko set kardiya re rama
+    // }
+
     // from this we can access the salary also
     // getter function
     // Private value ki value set karne ke liye use karte hai
@@ -37,6 +44,7 @@ public:
 class Student{
 public:
     string name;
+    string kaamKyakartehai;
     string dept;
 };
 
