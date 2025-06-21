@@ -8,6 +8,7 @@ public:
     int data;
     // ye pointer hai jo next node ka address store karega
     Node* next;
+    // Here we have created a pointer
     // ye next node ka address store karayega
 
     Node(int data) {
