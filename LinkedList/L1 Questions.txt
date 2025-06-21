@@ -24,30 +24,3 @@ Delete without Head Pointer
 
 Check if Linked List is Circular
 → For learning about loop handling.
-
-Delete node in Doubly Linked List
-→ Slightly advanced version of your deletion.
-
-🔹 Intermediate
-📌 LeetCode:
-2. Add Two Numbers
-→ Use tail insertion and traversal logic.
-
-141. Linked List Cycle
-→ Use Floyd’s cycle detection algorithm.
-
-160. Intersection of Two Linked Lists
-→ Useful for pointer logic understanding.
-
-234. Palindrome Linked List
-→ Reverse and compare logic.
-
-📌 GFG:
-Find Length of Loop
-→ Use slow/fast pointers.
-
-Intersection Point in Y Shaped Linked Lists
-→ Based on node references.
-
-Segregate Even and Odd Nodes
-→ Practice node rearrangement.
