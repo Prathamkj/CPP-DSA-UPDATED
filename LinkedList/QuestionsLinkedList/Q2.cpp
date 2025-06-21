@@ -25,6 +25,33 @@ public:
             return temp;
         }
 };
+// with for loop 
+class Solution {
+  public:
+    // Helper function to calculate length of the linked list
+    int length(Node* head) {
+        int len = 0;
+        while (head != nullptr) {
+            head = head->next;
+            len++;
+        }
+        return len;
+    }
+    
+    int getMiddle(Node* head) {
+        if (head == nullptr) return -1; // edge case: empty list
+
+        int len = length(head);         // call the helper function
+        int mid = len / 2;              // middle index
+        Node* temp = head;
+
+        for (int i = 0; i < mid; i++) {
+            temp = temp->next;
+        }
+
+        return temp->data;              // return the data, not the node
+    }
+};
 
 ✅ What does return temp; do?
 This returns a pointer to a node in the linked list — specifically, to the node at the middle.
