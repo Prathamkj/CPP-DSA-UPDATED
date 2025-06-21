@@ -2,6 +2,7 @@
 using namespace std;
 class Node {
     // here we implement the node 
+    // First we have to create a node - so we created a node here
 public:
 // node ke andar ye do value aayegi
     int data;
