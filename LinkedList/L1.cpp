@@ -17,6 +17,19 @@ public:
         // new node bane toh usme data dal dena and next ko null kar dena
         this->next = NULL;
     }
+
+    // Destructor to memory free
+    ~Node(){
+        int value = this-> data;
+        // memory free
+        if(this->next != NULL){
+            delete next;
+            this-> next = NULL;
+        }
+        cout<<"Memory is free for node"<<value<<endl;
+    }
+
+
 };  
 // Inserting at the head
 // head --> [10] --> [20] --> [30] --> nullptr
@@ -117,6 +130,7 @@ void deleteNode(Node* &head, int position) {
         delete toDelete;
         return;
     }
+    // That was for the first positon and now the rest for the last and n positon
     else{
         // deleting any middle and last node
         Node* curr = head;
