@@ -74,8 +74,10 @@ void insertAtPosition(Node* & head,int position, int data) {
     Node* temp = head;
     int cnt = 1;
     // sabse pahale traverse karna hai
+    // while loop for traversinng the linkedlist bitch
     while(cnt<position-1) {
         // n-1 tak loop chalaye humne
+        // Last position tak list ko traverse karenge bhaisabhh
         temp = temp->next;
         cnt++;
     }
