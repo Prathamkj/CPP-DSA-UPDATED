@@ -11,6 +11,7 @@ public:
     // Here we have created a pointer
     // ye next node ka address store karayega
 
+    // when the object of Node is created then the data will be assinged to it
     Node(int data) {
         this->data = data;
         // new node bane toh usme data dal dena and next ko null kar dena
@@ -18,15 +19,32 @@ public:
     }
 };  
 // Inserting at the head
+// head --> [10] --> [20] --> [30] --> nullptr
+/*
+temp->next = head;
+Links temp to the existing list (temp points to old head):
+temp --> [5] --> [10] --> [20] --> [30] --> nullptr
+
+head = temp;
+Now head points to the new node (temp):
+head --> [5] --> [10] --> [20] --> [30] --> nullptr
+*/
 void insertAtHead(Node* &head, int data) {
     // isme hum head and data bhej rhe hai
     // new node banayenge
     Node* temp = new Node(data);
     // now temp ka next head ko point karege
     temp->next = head;
+    // This connects the new node (temp) to the existing list by pointing its next to the current head.
     head = temp;
+    // 
 }
 // Inserting at the tail
+/*
+head --> [10] --> [20] --> [30] --> [40] --> nullptr
+                                         ↑
+                                        tail
+*/
 void insertAtTail(Node* &tail, int data) {
     // new node banayenge
     Node* temp = new Node(data);
@@ -46,7 +64,9 @@ void print(Node* &head) {
     while(temp!=NULL){
         cout<<temp->data<<"->";
         // isse temp aage badh jaayega
+        // Prints the data of each node followed by an arrow.
         temp = temp->next;
+        // 
     }
 }
 // Insert at nth position
@@ -141,11 +161,12 @@ void deleteNode(Node* &head, int position) {
 
 
 int main() {
-    // Node ka ob kect 
+    // Node ka object bnaya
     Node* node1 = new Node(10);
     Node* node2 = new Node(20);
     cout<<node1->data<<endl;
     cout<<node1->next<<endl;
+    // OP -> 10 , 0
 
     // head pointed to node1
     Node* head = node1;
