@@ -1,16 +1,16 @@
 🔹 Beginner - Easy Level
 📌 LeetCode:
-206. Reverse Linked List
+206. Reverse Linked List - Done
 → Practice pointer manipulation and traversal.
 
-83. Remove Duplicates from Sorted List
+83. Remove Duplicates from Sorted List - Done
 → Use traversal and conditional deletion.
 
-203. Remove Linked List Elements
+203. Remove Linked List Elements - Done
 → Similar to your deleteNode() by value.
 
-876. Middle of the Linked List
-→ Learn slow and fast pointers.
+876. Middle of the Linked List - Done
+→ Learn slow and fast pointers. 
 
 21. Merge Two Sorted Lists
 → Combine two lists using pointers.
