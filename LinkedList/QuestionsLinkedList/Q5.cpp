@@ -8,15 +8,16 @@ public:
         // Starting pointer for merging the list
         ListNode* temp = dummy;
 
-        while(h1 != nullptr && h2 != nullptr) {
+         while(h1 != nullptr && h2 != nullptr) {
             if(h2->val >= h1->val) {
                 temp->next = h1;
                 h1 = h1->next;
+                temp = temp->next;
             } else {
                 temp->next = h2;
                 h2 = h2->next;
+                temp = temp->next;
             }
-            temp = temp->next;
         }
 
         // Attach the remaining part
