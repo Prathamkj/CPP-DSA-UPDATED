@@ -12,7 +12,7 @@
 876. Middle of the Linked List - Done
 → Learn slow and fast pointers. 
 
-21. Merge Two Sorted Lists
+21. Merge Two Sorted Lists - Done
 → Combine two lists using pointers.
 
 📌 GFG:
