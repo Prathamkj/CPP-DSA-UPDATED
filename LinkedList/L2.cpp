@@ -103,6 +103,35 @@ void insertat(Node *&tail, Node *&head, int data, int pos)
     temp->next = nodeToInsert;
     nodeToInsert->prev = temp;
 }
+void DeleteNode(int position , Node* &head){
+    if(position == 1){
+        // for 1st position in the Node
+        Node* temp = head;
+        temp->next->prev = NULL:
+        head = temp->next;
+        temp->next = NULL;
+        delete temp;
+    }
+    else{
+        // in else part we will delete Middle or Last Node
+        Node* curr = head;
+        Node* prev = NULL;
+        int cnt = 1;
+        while(cnt < position){
+            prev = curr;
+            curr = curr->next;
+            cnt++;
+        }
+        // For tail and the Middle of the Doubly linkedlist
+        // Now deleting the Node
+        curr->prev = NULL;
+        prev->next = curr->next;
+        curr->next = NULL;
+        delete curr;
+    }
+}
+
+
 int main()
 {
     Node *node1 = new Node(10);
