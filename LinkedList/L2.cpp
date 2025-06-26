@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+
 // Creating a Node for Doubly linked list
 class Node
 {
@@ -28,8 +29,9 @@ void print(Node *&head)
     }
     cout << endl;
 }
-// lenght of node
-int lenght(Node *head)
+
+// length of node
+int length(Node *head)
 {
     int len = 0;
     Node *temp = head;
@@ -42,17 +44,19 @@ int lenght(Node *head)
     }
     return len;
 }
+
 // insert at head
 void insertathead(Node *&head, int data)
 // Node *&head means we're passing the head by reference, so changes to head will be reflected outside the function.
 {
-    if(head==NULL){
+    if (head == NULL)
+    {
         // for the empty list
-        Node* temp = new Node(d);
+        Node *temp = new Node(data); // fixed: changed 'd' to 'data'
         head = temp;
     }
-    else{
-
+    else
+    {
         Node *temp = new Node(data);
         // ek new node banaye
         temp->next = head;
@@ -62,6 +66,7 @@ void insertathead(Node *&head, int data)
         head = temp;
     }
 }
+
 // insert at tail
 void insertattail(Node *&tail, int data)
 {
@@ -70,6 +75,7 @@ void insertattail(Node *&tail, int data)
     temp->prev = tail;
     tail = temp;
 }
+
 // insert at any position
 void insertat(Node *&tail, Node *&head, int data, int pos)
 {
@@ -80,7 +86,9 @@ void insertat(Node *&tail, Node *&head, int data, int pos)
         insertathead(head, data);
         return;
     }
+
     // traverse to the position where we want to insert
+    Node *temp = head; // ✅ FIX: declare temp
     int cnt = 1;
     while (cnt < pos - 1)
     {
@@ -103,48 +111,62 @@ void insertat(Node *&tail, Node *&head, int data, int pos)
     temp->next = nodeToInsert;
     nodeToInsert->prev = temp;
 }
-void DeleteNode(int position , Node* &head){
-    if(position == 1){
+
+// delete a node at given position
+void DeleteNode(int position, Node *&head)
+{
+    if (position == 1)
+    {
         // for 1st position in the Node
-        Node* temp = head;
-        temp->next->prev = NULL:
+        Node *temp = head;
+        if (temp->next != NULL) // check if next exists before accessing
+            temp->next->prev = NULL;
         head = temp->next;
         temp->next = NULL;
         delete temp;
     }
-    else{
+    else
+    {
         // in else part we will delete Middle or Last Node
-        Node* curr = head;
-        Node* prev = NULL;
+        Node *curr = head;
+        Node *prev = NULL;
         int cnt = 1;
-        while(cnt < position){
+        while (cnt < position)
+        {
             prev = curr;
             curr = curr->next;
             cnt++;
         }
+
         // For tail and the Middle of the Doubly linkedlist
         // Now deleting the Node
-        curr->prev = NULL;
         prev->next = curr->next;
+        if (curr->next != NULL)
+            curr->next->prev = prev;
         curr->next = NULL;
+        curr->prev = NULL;
         delete curr;
     }
 }
-
 
 int main()
 {
     Node *node1 = new Node(10);
     Node *head = node1;
     Node *tail = node1;
+
     print(head);
+
     // Insert at head
     insertathead(head, 20);
     print(head);
+
     insertathead(head, 30);
     print(head);
-    return 0;
+
     // insert at tail
     insertattail(tail, 25);
     print(head);
+
+    return 0;
 }
