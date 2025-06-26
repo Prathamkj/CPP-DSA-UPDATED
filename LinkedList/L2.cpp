@@ -18,7 +18,7 @@ public:
 };
 
 // print the linked list
-void print(Node* &head)
+void print(Node *&head)
 {
     Node *temp = head;
     while (temp != NULL)
@@ -35,7 +35,7 @@ int lenght(Node *head)
     Node *temp = head;
     while (temp != NULL)
     {
-        // jab tak temp null nhi hota tab tak temp ko aage next karte raho and 
+        // jab tak temp null nhi hota tab tak temp ko aage next karte raho and
         // length ko increment karte raho
         len++;
         temp = temp->next;
@@ -44,12 +44,14 @@ int lenght(Node *head)
 }
 // insert at head
 void insertathead(Node *&head, int data)
+// Node *&head means we're passing the head by reference, so changes to head will be reflected outside the function.
 {
     Node *temp = new Node(data);
     // ek new node banaye
     temp->next = head;
     // temp ke next ko head me dala and head ke previous ko temp me dala
     head->prev = temp;
+    // head ki postion badhayi
     head = temp;
 }
 // insert at tail
