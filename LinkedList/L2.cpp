@@ -46,13 +46,21 @@ int lenght(Node *head)
 void insertathead(Node *&head, int data)
 // Node *&head means we're passing the head by reference, so changes to head will be reflected outside the function.
 {
-    Node *temp = new Node(data);
-    // ek new node banaye
-    temp->next = head;
-    // temp ke next ko head me dala and head ke previous ko temp me dala
-    head->prev = temp;
-    // head ki postion badhayi
-    head = temp;
+    if(head==NULL){
+        // for the empty list
+        Node* temp = new Node(d);
+        head = temp;
+    }
+    else{
+
+        Node *temp = new Node(data);
+        // ek new node banaye
+        temp->next = head;
+        // temp ke next ko head me dala and head ke previous ko temp me dala
+        head->prev = temp;
+        // head ki postion badhayi
+        head = temp;
+    }
 }
 // insert at tail
 void insertattail(Node *&tail, int data)
