@@ -120,7 +120,7 @@ void DeleteNode(int position, Node *&head)
         // for 1st position in the Node
         Node *temp = head;
         if (temp->next != NULL) // check if next exists before accessing
-            temp->next->prev = NULL;
+        temp->next->prev = NULL;
         head = temp->next;
         temp->next = NULL;
         delete temp;
