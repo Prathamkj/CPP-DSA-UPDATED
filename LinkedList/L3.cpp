@@ -46,6 +46,51 @@ void insertNode(Node* &tail ,int element , int data){
     curr →› next = temp;
 
 }
+// For traversing the circural linked List
+void traverse(Node* tail){
+     if (tail == NULL) {
+        cout << "List is empty." << endl;
+        return;
+    }
+    Node* temp = tail;
+    do{
+        cout<<tail->data<<" ";
+        // printingg the data of the tail
+        tail = tail->next;
+    }
+    while(tail != temp);
+    cout<<endl;
+}
+
+// Deletion of the Node in Circural Linked List
+void DeleteNode(Node* tail, int value){
+    // for first empty list
+    if(tail == NULL){
+        cout<< "List is empty" <<endl;
+        return;
+    }
+    else{
+        // for non empty
+        Node* prev = tail;
+        Node* curr = prev->next;
+        while(curr->data != value){
+            prev = curr;
+            curr = curr -> next;
+        }
+        prev->next = curr->next;
+        // for the single node
+        if(curr == prev){
+            tail = nullptr;
+        }
+
+        else if(tail == curr){
+            tail = prev;
+        }
+        curr->next = nullptr;
+        delete curr;
+    }
+}
+
 int main() {
     CircularLinkedList cll;
 
