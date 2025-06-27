@@ -21,20 +21,25 @@ public:
     }
 };
 // insert node
-voidinsertNode(Node* &tail ,int element , int data){
-    Node* newNode = new Node(data);
-    // new node create kare
-
-    if(tail == NULL){
-        // for tail is null
-        newNode->next = newNode;
-        // apne aap ko point kar rha hai
+void insertNode(Node* &tail ,int element , int data){
+    // empty list
+    if(tail == NULL) {
+        Node* newNode = new Node(d) :
         tail = newNode;
-    }else{
-        // jab list empty nhi hai
-        newNode->next = tail->next;
-        tail->next = newNode;
+        newNode →> next = newNode;
     }
+    else {
+        //non-empty list
+        //assuming that the element is present in the list
+        Node* curr = tail;
+        while(curr-›data != element) <
+        curr = curr →> next;
+    }
+    //element found - curr is representing element wala node
+    Node* temp = new Node (data);
+    temp → next = curr → next;
+    curr →› next = temp;
+
 }
 int main() {
     CircularLinkedList cll;
