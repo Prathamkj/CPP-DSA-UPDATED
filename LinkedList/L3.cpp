@@ -24,17 +24,22 @@ public:
 void insertNode(Node* &tail ,int element , int data){
     // empty list
     if(tail == NULL) {
-        Node* newNode = new Node(d) :
+        Node* newNode = new Node(data);
+        // if tail = NULL then we assign tail directly to newnode
         tail = newNode;
         newNode →> next = newNode;
     }
     else {
         //non-empty list
         //assuming that the element is present in the list
+        // current is pointing towards tail
         Node* curr = tail;
-        while(curr-›data != element) <
+        while(curr-›data != element) {
+        // curr->data is not equal to element then we increment the current
         curr = curr →> next;
+        }
     }
+    // Now after element is f ound then we do the rest of the things
     //element found - curr is representing element wala node
     Node* temp = new Node (data);
     temp → next = curr → next;
