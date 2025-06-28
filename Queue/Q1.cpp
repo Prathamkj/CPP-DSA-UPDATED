@@ -1,24 +1,29 @@
 #include<iostream>
 using namespace std;
 #include <queue>
-// int main(){
-//     // creating the queue
-//     queue<int> q;
-//     q.push(33);
-//     q.push(44);
-//     q.push(35);
-//     q.push(45);
-//     q.pop();
-//     cout<< "size of the queue is "<<q.size()<<endl;
-//     cout<< "front element of the queue is "<<q.front()<<endl;
-//     cout<< "back element of the queue is "<<q.back()<<endl;
-//     if(q.empty()){
-//         cout<<"queue is empty"<<endl;
-//     }
-//     else{
-//         cout<<"queue is not empty"<<endl;
-//     }
-// }
+#include <iostream>
+#include <queue>
+using namespace std;
+
+int main() {
+    
+    // Creating a queue of integers
+    queue<int> q;
+    // Create another queue from q1
+    // queue<int> q2(q1);
+    
+    // Pushing elements into the queue
+    q.push(3);
+    q.push(4);
+    q.push(5);
+
+    while (!q.empty()) {
+        cout << q.front() << " ";
+        q.pop();
+    }
+    return 0;
+    // - output will be -- 3 4 5
+}
 
 // implementation of queue using Array
 class Queue{
