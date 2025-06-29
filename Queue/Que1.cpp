@@ -15,14 +15,17 @@ class Queue {
       end = -1;
       currSize = 0;
     }
-
+  // parameterized constructor
+  // to create a queue of size maxSize
+  // Here You can pass your own size while creating the object.
   Queue(int maxSize) {
-    ( * this).maxSize = maxSize;
-    arr = new int[maxSize];
-    start = -1;
-    end = -1;
-    currSize = 0;
-  }
+  this->maxSize = maxSize;
+  arr = new int[maxSize];
+  start = -1;
+  end = -1;
+  currSize = 0;
+}
+
   // for push of the Element
   void push(int newElement) {
     if (currSize == maxSize) {
@@ -36,10 +39,10 @@ class Queue {
       start = 0;
       end = 0;
     } 
-    // if your end is at the last position then you have to fix back to i'th position 
+    // i move end to next position using circular logic 
     // using rotation 
     else
-      end = (end + 1) % maxSize;
+    end = (end + 1) % maxSize;
     arr[end] = newElement;
     cout << "The element pushed is " << newElement << endl;
     currSize++;
@@ -51,13 +54,15 @@ class Queue {
     // assinning the fist value
     int popped = arr[start];
     if (currSize == 1) {
+      // If only one element (currSize == 1), reset both pointers to -1 (now empty).
       start = -1;
       end = -1;
     } 
     // do the same shit for start
     else
+    // Otherwise, move start to next using (start + 1) % maxSize.
       start = (start + 1) % maxSize;
-    currSize--;
+      currSize--;
     return popped;
   }
   int top() {
