@@ -19,6 +19,8 @@ class Solution {
         // Check if freqA has enough count for each element in freqB 
         // we check whether every element in b exists in a with at least as many occurrences.
         for (auto it : freqB) {
+            // if the element in b is not present in a or has fewer occurrences
+            // than required, return false
             if (freqA[it.first] < it.second) {
                 return false;
             }
