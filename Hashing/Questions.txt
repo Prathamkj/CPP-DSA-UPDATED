@@ -1,0 +1,65 @@
+✅ Easy-Level Questions (10)
+These are great for building foundational knowledge of hashing, arrays, and simple linked lists:
+
+Subset Check
+Check if one array is a subset of another using HashMap or Set.
+
+Union and Intersection of Two Linked Lists
+Basic use of HashSet to get union and intersection.
+
+A Pair with Given Sum
+Use HashMap to check if target - current exists.
+
+Two Pair Sum
+Find all pairs from array with sum equal to a given value.
+
+Largest Subarray with 0 Sum
+Use prefix sum + HashMap for efficient solution.
+
+All Subarrays with 0 Sum
+Find total count of all subarrays with zero sum using prefix sum and hashmap.
+
+Symmetric Pairs
+Given n pairs, find all symmetric pairs like (a,b) and (b,a).
+
+Missing Elements of a Range
+Print missing numbers between two bounds in an array.
+
+Distinct Elements in K-size Window
+Use sliding window + HashMap to count distinct elements in all windows.
+
+Advantages of BST over Hash Table
+Theoretical comparison — focus on memory, ordering, and time complexity.
+
+🔶 Medium-Level Questions (10)
+These require deeper understanding of hashing, prefix sum, XOR, and sometimes heap or tree concepts:
+
+Find Itinerary from a Given List of Tickets
+Construct a path from unordered list of source-destination pairs using a HashMap.
+
+Largest Subarray with Equal Number of 0s and 1s
+Replace 0 with -1 and use prefix sum + HashMap.
+
+Count Subarrays with Given XOR
+Prefix XOR + HashMap approach.
+
+Longest Consecutive Subsequence
+Use HashSet to track sequence continuity.
+
+Pair Sum Divisible by K
+Count remainder pairs with HashMap.
+
+Palindrome Substring Queries
+Preprocess with hashing or palindrome DP (medium if queries are many).
+
+Smallest Range from K Lists
+Use min-heap and HashMap to keep track of min/max from K sorted lists.
+
+Internal Working of HashMap in Java
+Explain how Java HashMap handles hashing, collision, resizing, etc.
+
+Separate Chaining for Collision Handling
+Implement or explain hash table with chaining using linked list.
+
+Open Addressing for Collision Handling
+Linear probing, quadratic probing, and double hashing methods.
