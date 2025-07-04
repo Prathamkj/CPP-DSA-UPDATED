@@ -1,4 +1,5 @@
 // Longest Subarray with Sum K
+// subarray, sum, brute force
 // 1st Approach: Brute Force
 // Time Complexity: O(n^3)
 class Solution {
