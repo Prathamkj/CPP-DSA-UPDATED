@@ -27,6 +27,9 @@ int Kandane(int arr[] , int size){
         // Here we add the current element to the current sum
         CurrentSum = CurrentSum + arr[i];
         MaxSum = max(MaxSum, CurrentSum);
+        // Here if the current sum value is less than 0 
+        // Means value is negative so we reset the current sum equal to 0
+        // Because we want to find the maximum sum subarray
         if(CurrentSum < 0){
             // If current sum is negative then we reset the current sum
             CurrentSum = 0;
