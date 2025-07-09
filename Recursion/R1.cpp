@@ -5,6 +5,7 @@ int factorial(int n){
     // base case likho pahale 
     // isme return likhnna mandatory hai
     if(n==0){
+        // tab tak factorial nikalna hai jab tak n=0 na ho
         return 1;
     }
     // int small = factorial(n-1);
@@ -26,8 +27,8 @@ int counting(int n){
         return 1;
     }
     // input aya and print karwaya
-    cout << n << endl;
     counting(n-1);
+    cout << n << endl;
 }
 int main(){
     int n;

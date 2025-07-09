@@ -1,12 +1,12 @@
 🌟 Basic Recursion Problems (Foundation / Conceptual)
 Mostly conceptual — do these first to learn recursion flow.
 
-✅ Factorial of a number
+✅ Factorial of a number - Done
 GFG: Program for factorial of a number
 
 Not on LeetCode directly.
 
-✅ Sum of first N numbers
+✅ Sum of first N numbers 
 GFG: Sum of first n natural numbers
 
 Not on LeetCode directly.
