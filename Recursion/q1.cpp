@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-
+// Say digits of a number in words
 void breakDigits(int n, vector<int>& ans) {
     if (n == 0) return;
     breakDigits(n / 10, ans);
