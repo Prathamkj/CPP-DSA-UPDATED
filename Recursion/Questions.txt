@@ -6,17 +6,17 @@ GFG: Program for factorial of a number
 
 Not on LeetCode directly.
 
-✅ Sum of first N numbers 
+✅ Sum of first N numbers - Done
 GFG: Sum of first n natural numbers
 
 Not on LeetCode directly.
 
-✅ Print numbers from 1 to N (or N to 1)
+✅ Print numbers from 1 to N (or N to 1) - Done
 GFG: Print numbers using recursion
 
 Not on LeetCode directly.
 
-✅ Reverse a string
+✅ Reverse a string 
 LeetCode: 344. Reverse String — solve using recursion instead of two-pointer.
 
 GFG: Reverse a string using recursion
