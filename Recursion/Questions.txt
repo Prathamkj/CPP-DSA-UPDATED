@@ -1,0 +1,71 @@
+🟢 Basic Recursion Problems (must do for concepts)
+These help you understand the core idea: base case, recursive case, and the "call stack".
+
+1️⃣ Factorial of a number
+👉 Write a function to return factorial of n (n!).
+(Not on LeetCode directly, but classic.)
+
+2️⃣ Print numbers from 1 to N (or N to 1)
+👉 Simple problem to practice basic recursion flow.
+
+3️⃣ Sum of first N numbers
+👉 Return sum from 1 to N recursively.
+
+4️⃣ Reverse a string
+👉 LeetCode: 344. Reverse String
+👉 You can solve recursively instead of two-pointer.
+
+5️⃣ Check if a string is palindrome (using recursion)
+
+🟢 Easy-level Recursion Problems (LeetCode)
+These involve arrays or strings, no trees/graphs.
+
+1️⃣ LeetCode 21. Merge Two Sorted Lists (solvable using recursion)
+👉 Problem link
+👉 Classic recursion to merge two lists.
+
+2️⃣ LeetCode 206. Reverse Linked List (recursive version)
+👉 Problem link
+👉 Great practice for backtracking recursion on linked lists.
+
+3️⃣ LeetCode 876. Middle of the Linked List
+👉 Problem link
+👉 Can be solved iteratively, but try to think recursively for practice.
+
+4️⃣ LeetCode 234. Palindrome Linked List (can be solved recursively)
+👉 Problem link
+
+5️⃣ LeetCode 509. Fibonacci Number
+👉 Problem link
+👉 Classical recursion (but later optimized with DP).
+
+🟠 Medium-level Recursion Problems (LeetCode)
+These are slightly more complex, often involve backtracking idea but still pure recursion, no explicit tree/graph.
+
+1️⃣ LeetCode 46. Permutations
+👉 Problem link
+👉 Must-do to understand recursive generation.
+
+2️⃣ LeetCode 77. Combinations
+👉 Problem link
+👉 Generates all combinations of k numbers out of 1..n.
+
+3️⃣ LeetCode 39. Combination Sum
+👉 Problem link
+👉 Classical recursion/backtracking.
+
+4️⃣ LeetCode 78. Subsets
+👉 Problem link
+👉 Generates power set using recursion.
+
+5️⃣ LeetCode 131. Palindrome Partitioning
+👉 Problem link
+👉 Partition string into palindromic substrings using recursion.
+
+6️⃣ LeetCode 17. Letter Combinations of a Phone Number
+👉 Problem link
+👉 Recursively generate all letter combinations.
+
+7️⃣ LeetCode 22. Generate Parentheses
+👉 Problem link
+👉 Important for recursion with constraints.
