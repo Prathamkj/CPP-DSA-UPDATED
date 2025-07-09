@@ -1,71 +1,90 @@
-🟢 Basic Recursion Problems (must do for concepts)
-These help you understand the core idea: base case, recursive case, and the "call stack".
+🌟 Basic Recursion Problems (Foundation / Conceptual)
+Mostly conceptual — do these first to learn recursion flow.
 
-1️⃣ Factorial of a number
-👉 Write a function to return factorial of n (n!).
-(Not on LeetCode directly, but classic.)
+✅ Factorial of a number
+GFG: Program for factorial of a number
 
-2️⃣ Print numbers from 1 to N (or N to 1)
-👉 Simple problem to practice basic recursion flow.
+Not on LeetCode directly.
 
-3️⃣ Sum of first N numbers
-👉 Return sum from 1 to N recursively.
+✅ Sum of first N numbers
+GFG: Sum of first n natural numbers
 
-4️⃣ Reverse a string
-👉 LeetCode: 344. Reverse String
-👉 You can solve recursively instead of two-pointer.
+Not on LeetCode directly.
 
-5️⃣ Check if a string is palindrome (using recursion)
+✅ Print numbers from 1 to N (or N to 1)
+GFG: Print numbers using recursion
 
-🟢 Easy-level Recursion Problems (LeetCode)
-These involve arrays or strings, no trees/graphs.
+Not on LeetCode directly.
 
-1️⃣ LeetCode 21. Merge Two Sorted Lists (solvable using recursion)
-👉 Problem link
-👉 Classic recursion to merge two lists.
+✅ Reverse a string
+LeetCode: 344. Reverse String — solve using recursion instead of two-pointer.
 
-2️⃣ LeetCode 206. Reverse Linked List (recursive version)
-👉 Problem link
-👉 Great practice for backtracking recursion on linked lists.
+GFG: Reverse a string using recursion
 
-3️⃣ LeetCode 876. Middle of the Linked List
-👉 Problem link
-👉 Can be solved iteratively, but try to think recursively for practice.
+✅ Check palindrome using recursion
+GFG: Check if a string is palindrome using recursion
 
-4️⃣ LeetCode 234. Palindrome Linked List (can be solved recursively)
-👉 Problem link
+🟢 Easy Recursion Problems (LeetCode & GFG)
+✅ Fibonacci number
+LeetCode: 509. Fibonacci Number
 
-5️⃣ LeetCode 509. Fibonacci Number
-👉 Problem link
-👉 Classical recursion (but later optimized with DP).
+GFG: Fibonacci using recursion
 
-🟠 Medium-level Recursion Problems (LeetCode)
-These are slightly more complex, often involve backtracking idea but still pure recursion, no explicit tree/graph.
+✅ Merge two sorted linked lists (recursive approach)
+LeetCode: 21. Merge Two Sorted Lists
 
-1️⃣ LeetCode 46. Permutations
-👉 Problem link
-👉 Must-do to understand recursive generation.
+GFG: Merge two sorted linked lists
 
-2️⃣ LeetCode 77. Combinations
-👉 Problem link
-👉 Generates all combinations of k numbers out of 1..n.
+✅ Reverse a linked list (recursive)
+LeetCode: 206. Reverse Linked List
 
-3️⃣ LeetCode 39. Combination Sum
-👉 Problem link
-👉 Classical recursion/backtracking.
+GFG: Reverse a linked list using recursion
 
-4️⃣ LeetCode 78. Subsets
-👉 Problem link
-👉 Generates power set using recursion.
+✅ Palindrome linked list (recursive approach)
+LeetCode: 234. Palindrome Linked List
 
-5️⃣ LeetCode 131. Palindrome Partitioning
-👉 Problem link
-👉 Partition string into palindromic substrings using recursion.
+GFG: Check if linked list is palindrome
 
-6️⃣ LeetCode 17. Letter Combinations of a Phone Number
-👉 Problem link
-👉 Recursively generate all letter combinations.
+🟠 Medium Recursion Problems (LeetCode & GFG)
+✅ Print all subsequences / subsets
+LeetCode: 78. Subsets
 
-7️⃣ LeetCode 22. Generate Parentheses
-👉 Problem link
-👉 Important for recursion with constraints.
+GFG: Print all subsequences of a string
+
+✅ All permutations of a string or array
+LeetCode: 46. Permutations
+
+GFG: Print all permutations of a string
+
+✅ Combinations
+LeetCode: 77. Combinations
+
+GFG: Print all possible combinations of r elements in a given array of size n
+
+✅ Combination Sum
+LeetCode: 39. Combination Sum
+
+GFG: Print all combinations that sum to target
+
+✅ Palindrome Partitioning
+LeetCode: 131. Palindrome Partitioning
+
+GFG: Palindrome partitioning of a string
+
+✅ Letter combinations of a phone number
+LeetCode: 17. Letter Combinations of a Phone Number
+
+GFG: Possible words from phone digits
+
+✅ Generate Parentheses
+LeetCode: 22. Generate Parentheses
+
+GFG: Print all combinations of balanced parentheses
+
+💡 Bonus Recursion-Only (Classic Interview Style) Problems on GFG
+Tower of Hanoi
+
+Josephus problem
+
+Count consonants in a string using recursion
+
