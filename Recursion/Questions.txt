@@ -25,9 +25,9 @@ GFG: Reverse a string using recursion
 GFG: Check if a string is palindrome using recursion
 
 🟢 Easy Recursion Problems (LeetCode & GFG)
-✅ Fibonacci number
-LeetCode: 509. Fibonacci Number
 
+✅ Fibonacci number -  Done
+LeetCode: 509. Fibonacci Number
 GFG: Fibonacci using recursion
 
 ✅ Merge two sorted linked lists (recursive approach)
