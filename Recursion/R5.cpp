@@ -1,54 +1,64 @@
-// Recursion in String
 #include <iostream>
 using namespace std;
-void reverse(string& str , int i,int j){
-    // here humne name ko as a refrence variable pass kar diya
-    if(i>j)
-        return ;
-        // base condition
-        swap(str[i],str[j]);
-        i++;
-        j--;
-        // calling the function
-        reverse(str,i,j);
+
+// Reverse string using recursion
+void reverse(string& str, int i, int j) {
+    if (i > j)
+        return;
+    swap(str[i], str[j]);
+    reverse(str, i + 1, j - 1);
 }
 
-// Check Palindromee
-bool Palindrome(string str , int i, int j){
-    // Base condition
-    if(i>j)
+// Check if string is palindrome using recursion
+bool Palindrome(string str, int i, int j) {
+    if (i > j)
         return true;
-    // check if the first and last character are same
-    if(str[i] != str[j]){
-        // if it is not equual then return false
-        return false ;
-    }
-    else{
-        return Palindrome(str,i+1,j-1);
-        // call the function and i=i+1 and j=j-1
-    }
+    if (str[i] != str[j])
+        return false;
+    else
+        return Palindrome(str, i + 1, j - 1);
 }
 
-int main(){
+// Sort array using recursion (bubble sort logic)
+void sortArray(int *arr, int n) {
+    // Base case: if size is 0 or 1, already sorted
+    if (n == 0 || n == 1) {
+        return;
+    }
+
+    // Place the largest element at the end
+    for (int i = 0; i < n - 1; i++) {
+        if (arr[i] > arr[i + 1]) {
+            swap(arr[i], arr[i + 1]);
+        }
+    }
+
+    // Recursive call for remaining array
+    sortArray(arr, n - 1);
+}
+
+int main() {
+    // String reverse and palindrome check
     string name = "abba";
-    reverse(name , 0 , name.size() - 1);
-    cout<<name<<endl;
-    bool palindrome = Palindrome(name , 0 , name.size() - 1);
-    if(palindrome){
-        cout<<"It is a Palindrome";
-    }
-    else{
-        cout<<"It is not a Palindrome";
-    }
-}
+    reverse(name, 0, name.size() - 1);
+    cout << "Reversed string: " << name << endl;
 
-void sortArray(int *arr,int n) {
-//base case- already sorted
-if (n
-II n1) {
-return
-// 1 case sovle karlia— largest element ko end me rakh dega
-for(int i=ø; i<n-l; i++) {
-if(arr[il > arr[i+ll){
-swap(arr[i], arr[i+l]);
-sortArray(arr,
+    bool palindrome = Palindrome(name, 0, name.size() - 1);
+    if (palindrome) {
+        cout << "It is a Palindrome" << endl;
+    } else {
+        cout << "It is not a Palindrome" << endl;
+    }
+
+    // Array sorting
+    int arr[] = {5, 4, 3, 2, 1};
+    int n = 5;
+    sortArray(arr, n);
+    cout << "Sorted array: ";
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+    return 0;
+}

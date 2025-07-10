@@ -16,12 +16,12 @@ GFG: Print numbers using recursion
 
 Not on LeetCode directly.
 
-✅ Reverse a string 
+✅ Reverse a string - Done
 LeetCode: 344. Reverse String — solve using recursion instead of two-pointer.
 
 GFG: Reverse a string using recursion
 
-✅ Check palindrome using recursion
+✅ Check palindrome using recursion - Done
 GFG: Check if a string is palindrome using recursion
 
 🟢 Easy Recursion Problems (LeetCode & GFG)
