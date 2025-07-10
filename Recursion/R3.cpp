@@ -8,15 +8,20 @@ bool isSorted(int arr[], int size)
     // if array single size me hai toh it is always sorted
     if (size == 1 || size == 0)
     {
+        // koi bhi element nhi hai = 0 , ya ek hi element hai = 1   
         return true;
     }
+    // starting ke 2 element check karenge
     if (arr[0] > arr[1])
     {
         return false;
         // here first element is sorted technicaly
     }
+    // else wala case sorted hai 
     else
     {
+        // so humne 0th index ke element and 1st index ke element ko check kar liya
+        // ab hum 1st index se lekar last tak ke elements ko check karenge
         bool ans = isSorted(arr + 1, size - 1);
         return ans;
     }
