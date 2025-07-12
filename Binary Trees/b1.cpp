@@ -55,13 +55,17 @@ void levelOrderTraversal(node* root) {
         q.pop();
 
         if(temp == NULL) { 
-            //purana level complete traverse ho chuka hai
+            // Agar pahela elemeent is NUll tohh Enter maar do
             cout << endl;
+            // and if queue is not empty then we again push NULL into the queue
             if(!q.empty()) { 
                 //queue still has some child ndoes
                 q.push(NULL);
             }  
         }
+        // if the temp or front element is Not Null 
+        // then we print the data of the node
+        // and push the left and right child of the node into the queue
         else{
             cout << temp -> data << " ";
             if(temp ->left) {
