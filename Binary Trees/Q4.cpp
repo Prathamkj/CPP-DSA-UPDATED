@@ -28,6 +28,7 @@ public:
     // left boundary of the tree
     void addLeftBoundary(Node* root, vector<int>& res) {
         Node* curr = root->left;
+        // here we are focusing the whole left part of the tree
         while (curr) {
             // If the current node is not a leaf,
             // add its value to the result
@@ -37,6 +38,7 @@ public:
             // Move to the left child if it exists,
             // otherwise move to the right child
             if (curr->left) {
+                // if current ka left exist karta hai then move it to the left side
                 curr = curr->left;
             } else {
                 curr = curr->right;
@@ -66,6 +68,7 @@ public:
         // Reverse and add the values from
         // the temporary vector to the result
         for (int i = temp.size() - 1; i >= 0; --i) {
+            // yaha par hum reverse push karenge temp me push karne ke baad
             res.push_back(temp[i]);
         }
     }
