@@ -36,11 +36,13 @@ public:
                 return temp;
             }
             // 2 child
+            // so here we have choose the smallest value in right subtree
             if(root->left != nullptr && root->right != nullptr){
                 int mini = minVal(root->right)->val;  // fixed from ->data to ->val
                 // storing the minimum data on the right side of the node
                 // to swithch the value it with
                 root->val = mini;  // fixed from root->data to root->val
+                // traverse kar diya
                 root->right = deleteNode(root->right , mini);
                 return root;
             }
