@@ -64,9 +64,12 @@ public:
             int mid = st + (end - st) / 2;
             int row = mid / m;
             int column = mid % m;
+            // by this method we are getting the parameters of the mid ( , )
             if(matrix[row][column] == target){
+                // if mid == target then return true
                 return true;
             }
+            // else the rest part
             else if(matrix[row][column] < target){
                 st = mid + 1;
             }
