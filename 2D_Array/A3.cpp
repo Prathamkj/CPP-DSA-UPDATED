@@ -49,6 +49,35 @@ public:
         return false;
     }
 };
+// optimal solution for the search in 2d Matrix
+class Solution {
+public:
+    bool searchMatrix(vector<vector<int>>& matrix, int target) {
+        // this is a optimal Approach
+        int n = matrix.size();
+        // n is for the row
+        int m = matrix[0].size();
+        // m is for the column
+        int st = 0;
+        int end = m*n - 1;
+        while(st <= end){
+            int mid = st + (end - st) / 2;
+            int row = mid / m;
+            int column = mid % m;
+            if(matrix[row][column] == target){
+                return true;
+            }
+            else if(matrix[row][column] < target){
+                st = mid + 1;
+            }
+            else{
+                end = mid - 1;
+            }
+        }
+        return false;
+    }
+};
+
 
 // 240. Search a 2D Matrix II
 
