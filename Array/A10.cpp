@@ -68,10 +68,13 @@ public:
             for(int j = i + 1; j < nums.size(); j++) {
                 int third = -(nums[i] + nums[j]);
                 if(hashset.find(third) != hashset.end()) {
+                    // if the third value is found in hashset then we will create a triplet
+                    // and insert it into the set to avoid duplicates
                     vector<int> temp = {nums[i], nums[j], third};
                     sort(temp.begin(), temp.end());
                     st.insert(temp);  // insert sorted triplet to avoid duplicates
                 }
+                // storing all the set values onto the hashset 
                 hashset.insert(nums[j]);
             }
         }
