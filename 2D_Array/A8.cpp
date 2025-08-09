@@ -44,3 +44,46 @@ public:
 
     }
 };
+
+// Easy Version
+
+class Solution {
+public:
+    vector<int> spiralOrder(vector<vector<int>>& matrix) {
+        vector<int> ans;
+        int startRow = 0, endRow = matrix.size() - 1;
+        int startCol = 0, endCol = matrix[0].size() - 1;
+
+        while (startRow <= endRow && startCol <= endCol) {
+            // 1. Move Left → Right (Top row)
+            for (int i = startCol; i <= endCol; i++) {
+                ans.push_back(matrix[startRow][i]);
+            }
+            startRow++;
+
+            // 2. Move Top → Bottom (Right column)
+            for (int i = startRow; i <= endRow; i++) {
+                ans.push_back(matrix[i][endCol]);
+            }
+            endCol--;
+
+            // 3. Move Right → Left (Bottom row)
+            if (startRow <= endRow) {
+                for (int i = endCol; i >= startCol; i--) {
+                    ans.push_back(matrix[endRow][i]);
+                }
+                endRow--;
+            }
+
+            // 4. Move Bottom → Top (Left column)
+            if (startCol <= endCol) {
+                for (int i = endRow; i >= startRow; i--) {
+                    ans.push_back(matrix[i][startCol]);
+                }
+                startCol++;
+            }
+        }
+
+        return ans;
+    }
+};
