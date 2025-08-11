@@ -62,3 +62,55 @@ public:
         return -1;
     }
 };
+
+229. Majority Element II
+
+class Solution {
+public:
+    vector<int> majorityElement(vector<int>& nums) {
+        unordered_map<int, int> mp;
+        int n = nums.size();
+        
+        // Count frequencies
+        for (int num : nums) {
+            mp[num]++;
+        }
+        
+        // Store elements with frequency > n/3
+        vector<int> ans;
+        // created a vector to store the ans
+        // and threshold = n/3
+        int threshold = n / 3;
+        for (auto& val : mp) {
+            if (val.second > threshold) {
+                ans.push_back(val.first);
+            }
+        }
+        return ans;
+    }
+};
+
+2nd Approach
+class Solution {
+public:
+    vector<int> majorityElement(vector<int>& nums) {
+        sort(nums.begin(), nums.end());
+        vector<int> ans;
+        int n = nums.size();
+        int count = 1;
+
+        for (int i = 1; i <= n; i++) {
+            if (i < n && nums[i] == nums[i-1]) {
+                count++;
+            } else {
+                if (count > n / 3) {
+                    ans.push_back(nums[i-1]);
+                }
+
+                // nhi toh reset count
+                count = 1;
+            }
+        }
+        return ans;
+    }
+};
