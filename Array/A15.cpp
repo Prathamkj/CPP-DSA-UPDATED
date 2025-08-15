@@ -1,0 +1,2 @@
+count subarray equals k 
+
