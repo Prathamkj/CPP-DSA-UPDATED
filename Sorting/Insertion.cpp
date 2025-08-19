@@ -32,3 +32,45 @@ int main(){
     PrintArray(array,n);
     return 0;
 }
+
+
+
+///  Raw Code
+class Solution {
+  public:
+    void insertionSort(vector<int>& arr) {
+        // code here
+        int n = arr.size();
+        for(int i=1; i<n; i++){
+            // lets take a current element
+            int curr = arr[i];
+            int j = i - 1;
+            // current ke pahale wala element
+            while(j >=0 && arr[j] > curr){
+                arr[j+1] = arr[j];
+                j--;
+                // j ko decrement kar diyaa
+            }
+            // after that j+1 me current element dal diyaa
+            arr[j+1] = curr;
+        }
+    }
+};
+
+/// Java code
+class Solution {
+    // Please change the array in-place
+    public void insertionSort(int arr[]) {
+        // code here
+        int n = arr.length;
+        for(int i=1; i<n; i++){
+            int curr = arr[i];
+            int j = i - 1;
+            while(j >= 0 && arr[j] > curr){
+                arr[j+1] = arr[j];
+                j--;
+            }
+            arr[j+1] = curr;
+        }
+    }
+}

@@ -5,7 +5,10 @@ class Solution {
 public:
     bool searchINrow(vector<vector<int>>& matrix, int target , int row){
         int n = matrix[0].size();
+        // in this particular function we gonna search in a particular row
         int st = 0, e = n-1;
+        // so that's why we take end = n - 1
+        // for row particularly
         while(st<=e){
             int mid = st + (e - st)/2;
             if(target == matrix[row][mid]){
@@ -66,7 +69,10 @@ public:
         while(st <= end){
             int mid = st + (end - st) / 2;
             int row = mid / m;
+            // by this we will get the index of the row o
+            // by this we will get the index of the coln
             int column = mid % m;
+            // just divide and modulo by the coln sizeeee
             // by this method we are getting the parameters of the mid ( , )
             if(matrix[row][column] == target){
                 // if mid == target then return true
