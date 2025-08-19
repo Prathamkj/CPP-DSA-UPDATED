@@ -28,10 +28,13 @@ public:
         int m = matrix.size();
         // m is rows
         int st = 0;
+        // here we are taking a mid row -- because st to end for each coln so that it will cover all elements
+        // of the rows
         int e = n -1;
         while(st<=e){
             int mid = st + (e - st)/2;
             if(matrix[mid][0] <= target && matrix[mid][n-1] >= target){
+                // starting mid of the row from starting coln to ending coln
                 // found the row and applying bs on it
                 return searchINrow(matrix , target , mid);
 
