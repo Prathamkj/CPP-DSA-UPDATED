@@ -56,3 +56,27 @@ int main()
 
     return 0;
 }
+
+// Java code
+class Solution {
+    public char getMaxOccCharacter(String str) {
+        Map<Character, Integer> freq = new HashMap<>();
+
+        // Count frequency of each character
+        for (char ch : str.toCharArray()) {
+            if (ch != ' ')  // skip spaces
+                freq.put(ch, freq.getOrDefault(ch, 0) + 1);
+        }
+
+        // Find character with maximum frequency
+        char ans = '\0';
+        int maxi = -1;
+        for (Map.Entry<Character, Integer> entry : freq.entrySet()) {
+            if (entry.getValue() > maxi) {
+                maxi = entry.getValue();
+                ans = entry.getKey();
+            }
+        }
+        return ans;
+    }
+}
