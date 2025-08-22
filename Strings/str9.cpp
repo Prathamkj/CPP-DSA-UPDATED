@@ -17,3 +17,23 @@ public:
 
     }
 };
+
+import java.util.Arrays;
+
+class Solution {
+    public boolean areAnagrams(String s1, String s2) {
+        // Step 1: Check length
+        if (s1.length() != s2.length()) return false;
+
+        // Step 2: Convert to char arrays for sorting
+        char[] a = s1.toCharArray();
+        char[] b = s2.toCharArray();
+
+        // Step 3: Sort both arrays
+        Arrays.sort(a);
+        Arrays.sort(b);
+
+        // Step 4: Compare sorted arrays
+        return Arrays.equals(a, b);
+    }
+}

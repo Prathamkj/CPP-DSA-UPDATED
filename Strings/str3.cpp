@@ -78,6 +78,43 @@ string reversewords(string s){
 } 
 
 
-int main(){
+In Java
 
+class Solution {
+    public String reverseWords(String s) {
+        int n = s.length();
+        StringBuilder sb = new StringBuilder(s);
+        // humne ek new string bna li sb naam se
+        // cointaining s elements then reverse it initially
+        // Step 1: Reverse the entire string
+        sb.reverse();
+        
+        StringBuilder ans = new StringBuilder();
+        int i = 0;
+        // stirng answer
+
+        // Step 2: Process each word
+        while (i < n) {
+            StringBuilder word = new StringBuilder();
+            // word sttring
+            // Extract characters of the word until space
+            while (i < n && sb.charAt(i) != ' ') {
+                word.append(sb.charAt(i));
+                i++;
+            }
+            
+            // Reverse the word to correct its orientation
+            word.reverse();
+            
+            // If word is not empty, add it to ans with a space
+            if (word.length() > 0) {
+                ans.append(" ").append(word);
+            }
+
+            i++; // Skip spaces
+        }
+
+        // Remove leading space and return
+        return ans.toString().trim();
+    }
 }
