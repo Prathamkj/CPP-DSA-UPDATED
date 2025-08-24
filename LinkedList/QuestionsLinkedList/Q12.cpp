@@ -29,3 +29,34 @@ public:
         return temp->next;
     }
 };
+
+/// length soln
+
+class Solution {
+public:
+    ListNode* deleteMiddle(ListNode* head) {
+        if (!head || !head->next) return nullptr;
+
+        // Step 1: Find length
+        int len = 0;
+        ListNode* curr = head;
+        while (curr) {
+            len++;
+            curr = curr->next;
+        }
+
+        // Step 2: Move to node before middle
+        int mid = len / 2;
+        curr = head;
+        for (int i = 1; i < mid; i++) {
+            curr = curr->next;
+        }
+
+        // Step 3: Delete middle node
+        ListNode* temp = curr->next;
+        curr->next = curr->next->next;
+        delete temp;
+
+        return head;
+    }
+};
