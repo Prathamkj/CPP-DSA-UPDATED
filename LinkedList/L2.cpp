@@ -92,6 +92,7 @@ void insertat(Node *&tail, Node *&head, int data, int pos)
     int cnt = 1;
     while (cnt < pos - 1)
     {
+        //isme hum ye kar rhe hai ki temp ko waha tak leke jao jaha hume use insert krna hai
         temp = temp->next;
         cnt++;
     }
@@ -122,6 +123,7 @@ void DeleteNode(int position, Node *&head)
         if (temp->next != NULL) // check if next exists before accessing
         temp->next->prev = NULL;
         head = temp->next;
+        // head ko update kar diyaa
         temp->next = NULL;
         delete temp;
     }
@@ -143,9 +145,9 @@ void DeleteNode(int position, Node *&head)
         prev->next = curr->next;
         if (curr->next != NULL)
             curr->next->prev = prev;
-        curr->next = NULL;
-        curr->prev = NULL;
-        delete curr;
+            curr->next = NULL;
+            curr->prev = NULL;
+            delete curr;
     }
 }
 
