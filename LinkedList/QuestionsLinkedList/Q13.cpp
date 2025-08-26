@@ -40,21 +40,29 @@ public:
     }
 };
 
+2nd Approach
+class Solution {
+  public:
+    Node* reverse(Node* head) {
+        if (head == nullptr || head->next == nullptr) return head;
 
-APPROACH 2
-// swapping
-public static Node reverseDLL (Node head)
-//Your code here
-if(head == null head.next == null) return head;
-Node curr = head;
-Node temp = null;
-while(curr != null){ //swapping
-temp = curr. prev;
-curr. prev = curr.next;
-curr.next = temp;
-curr = curr. prev;
-}
-if(temp!=null){
-head = temp.prev;l
-}
-return head;
+        Node* currNode = head;
+        Node* prevNode = nullptr;
+
+        while (currNode != nullptr) {
+            // Store next
+            Node* nextNode = currNode->next;
+
+            // Swap pointers
+            currNode->next = prevNode;
+            currNode->prev = nextNode;
+            // Here we are just swapping the values 
+            // Move forward
+            prevNode = currNode;
+            currNode = nextNode;
+        }
+
+        return prevNode; // New head after reversal
+    }
+};
+
