@@ -4,10 +4,12 @@ Rotate Linked List
 class Solution {
 public:
     // Return the k-th node (1-indexed) starting from temp
+    // temp will be now new tail
     ListNode* findNthNode(ListNode* temp, int k){
         int cnt = 1;
         while(temp != nullptr){
             if(cnt == k ){
+                // if the count equals to k then only we will take the temp to that particular position..
                 return temp;                 // found the k-th node
             }
             cnt++;

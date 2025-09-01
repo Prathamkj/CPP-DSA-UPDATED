@@ -24,10 +24,11 @@ public:
 void insertNode(Node* &tail ,int element , int data){
     // empty list
     if(tail == NULL) {
+        // if ll is empty
         Node* newNode = new Node(data);
         // if tail = NULL then we assign tail directly to newnode
         tail = newNode;
-        newNode →> next = newNode;
+        newNode->next = newNode;
     }
     else {
         //non-empty list
