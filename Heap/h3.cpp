@@ -22,6 +22,7 @@ void heapify(int arr[], int n, int i) {
 void heapSort(int arr[], int n) {
     // Step 1: Build heap (O(n))
     for (int i = n / 2; i > 0; i--) {
+        // non leaf elements ko heapify karna hai
         heapify(arr, n, i);
     }
     // swap first and last element
