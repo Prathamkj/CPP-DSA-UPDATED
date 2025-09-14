@@ -10,3 +10,9 @@ priority_queue<int> pq; // max heap
 priority_queue<int, vector<int>, greater<int>> pq_min; // min heap
 // for the min heap we have to use greater<int> comparator
 
+Java 
+Min Heap -- 
+PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+
+Max Heap -- 
+PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
