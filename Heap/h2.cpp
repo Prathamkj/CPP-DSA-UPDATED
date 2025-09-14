@@ -1,10 +1,10 @@
 // Heapify Algorithm
 // you have given an array of data - 54 53 55 52 50
 // convert into heap
-// how you gonna convert into heap 
 
 // if we look at the last index 
 // leaf node in indexes me present hogi = (n/2 + 1) th index to n th index
+// LEAF NODES = N/2 + 1 - IN INDEXES ME HI PRESENT HONGI
 
 // hume 1 - n/2 wale part ko uski sahi position pe lana hai
 
@@ -20,6 +20,7 @@ void heapify(int arr[], int n, int i)
 {
     // it is a 1 based indexing
     int largest = i; // assume root is largest
+    // root -> Largest element
     int left = 2 * i; // left child index
     int right = 2 * i + 1; // right child index
 
@@ -36,6 +37,7 @@ void heapify(int arr[], int n, int i)
     if (largest != i)
     {
         // swap the elements
+        // then swap and call heapify again
         swap(arr[largest], arr[i]);
         heapify(arr, n, largest);
     }
