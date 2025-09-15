@@ -10,9 +10,12 @@ public:
                 for(int k=j+1; k<nums.size(); k++){
                     // checking if the sum is equal
                     if(nums[i] + nums[j] + nums[k] == 0){
+                        // if sum is equal to zero then we will create a vector
                         vector<int> triplet = {nums[i], nums[j], nums[k]};
                         // storing all the values into the vector
                         sort(triplet.begin(), triplet.end());
+                        // finally set will remove all the duplicates values
+                        // and give triplet to the ans vector
                         st.insert(triplet);
                     }
                 }
@@ -61,8 +64,7 @@ class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
         set<vector<int>> st;  // to avoid duplicate triplets
-        vector<vector<int>> ans;  // final answer
-
+        
         for(int i = 0; i < nums.size(); i++) {
             set<int> hashset;  // to store values seen so far for current i
             for(int j = i + 1; j < nums.size(); j++) {
@@ -74,11 +76,12 @@ public:
                     sort(temp.begin(), temp.end());
                     st.insert(temp);  // insert sorted triplet to avoid duplicates
                 }
-                // storing all the set values onto the hashset 
+                // storing all the j values into the hashset
+                // Means we are storing all the values after i into the hashset
                 hashset.insert(nums[j]);
             }
         }
-
+        vector<vector<int>> ans;  // final answer
         for(auto val : st) {
             ans.push_back(val);
         }

@@ -7,6 +7,8 @@ int PivotElement(int array[], int size)
 {
     int start = 1;
     int end = size - 2;
+    // end = size - 2 because last element cannot be a peak element
+    // similarly first element cannot be a peak element
     int middle = (start + end) / 2;
     while(start <= end) {
         if(array[middle - 1]<array[middle] && array[middle]>array[middle + 1]){

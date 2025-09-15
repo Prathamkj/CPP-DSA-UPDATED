@@ -37,6 +37,7 @@ public:
         while(st<=e){
             int mid = st + (e - st)/2;
             if(matrix[mid][0] <= target && matrix[mid][n-1] >= target){
+                // Here we are Taking About the Mid Row in the Matrix
                 // starting mid of the row from starting coln to ending coln
                 // found the row and applying bs on it
                 return searchINrow(matrix , target , mid);
@@ -69,7 +70,7 @@ public:
         while(st <= end){
             int mid = st + (end - st) / 2;
             int row = mid / m;
-            // by this we will get the index of the row o
+            // by this we will get the index of the row
             // by this we will get the index of the coln
             int column = mid % m;
             // just divide and modulo by the coln sizeeee

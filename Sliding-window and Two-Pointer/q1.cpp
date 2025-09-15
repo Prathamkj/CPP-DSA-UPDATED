@@ -17,6 +17,8 @@ public:
         // backward loop
         int right = card.size() - 1;
         for(int i=k-1; i>=0; i--){
+            // This particular loop is for the taking out the left sum elements and
+            // pushing right sum elements one by one from last of the index
             lsum = lsum - card[i];
             rsum = rsum + card[right];
             // update max sum after shifting

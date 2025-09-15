@@ -4,25 +4,23 @@
 class Solution {
 public:
     int longestOnes(vector<int>& nums, int k) {
+        int n = nums.size();
         int maxlen = 0;
-        for(int st = 0; st<nums.size(); st++){
-            // for count
-            int count = 0;
-            for(int end = st; end<nums.size(); end++){
-                if(nums[end] == 0){
-                    count++;
-                }
-                if(count <= k){
-                    maxlen = max(maxlen, end - st + 1);
-                }
-                else{
-                    break;
+
+        for(int i = 0; i < n; i++){
+            int zeros = 0; // reset zero count for each new i
+            for(int j = i; j < n; j++){
+                if(nums[j] == 0) zeros++;  // update instead of recounting
+
+                if(zeros <= k){
+                    maxlen = max(maxlen, j - i + 1);
                 }
             }
         }
         return maxlen;
     }
 };
+
 
 // 2nd Approach Sliding Window
 class Solution {

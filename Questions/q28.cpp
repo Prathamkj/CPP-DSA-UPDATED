@@ -16,6 +16,8 @@ class Solution {
                   }
                   if (sum == k) {
                       len = max(len, e - st + 1);
+                      // end - st + 1 is the length of the subarray
+                      // And you should remember thatt mf
                   }
               }
           }

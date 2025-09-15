@@ -26,12 +26,14 @@ public:
         string result = "";
         for(int i=0; i<say.length(); i++){
             char ch = say[i];
+            // character each in string
             int count = 1;
             while(i < say.length() - 1 && say[i] == say[i+1]){
                 count++;
                 i++;
             }
             result = result + to_string(count) + string(1, ch);
+            // Adding the count string and the character to the result
             // to_string(count)  Converts a number (int, long, double, etc.) into a string.
             // Converts a number (int, long, double, etc.) into a string.
             // --- Creates a string object from a character.
