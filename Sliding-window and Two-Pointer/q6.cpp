@@ -25,5 +25,5 @@ public:
         return count;
     }
 };
-
+// here we are converting all the even numbers to 0 and odd numbers to 1
 // Optimized Approach Sliding Window
