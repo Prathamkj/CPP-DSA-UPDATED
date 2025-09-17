@@ -8,6 +8,7 @@ class Solution {
 public:
     string removeOccurrences(string s, string part) {
         while(s.size() != 0 && s.find(part) < s.size()){
+            // if part is find then erase the part from the string s
             // Find the index where 'part' occurs in 's'
             // Erase 'part' from 's' starting from that index
             s.erase(s.find(part), part.size());

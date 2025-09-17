@@ -20,6 +20,7 @@ char getMaxOccCharacter(string str)
         char ch = str[i];
         // 
         int number = ch - 'a';
+        // here it will contain all the numbers of the string..
         // Number will contain the index of the character in the array
         // from 0 to 25
         // Here we created an array count

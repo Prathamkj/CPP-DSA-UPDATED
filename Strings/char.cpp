@@ -16,7 +16,7 @@ int geTlenght(char ch[]){
 }
 // Reverse a string
 void reverse(char ch[] ,  int n){
-
+    
     int s = 0;
     int e = n-1;
     while(s<e){
