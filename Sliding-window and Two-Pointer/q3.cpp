@@ -41,6 +41,7 @@ public:
                 // if count exceeds the k 
                 if(nums[left] == 0){
                     count--;
+                    // then decrement the count and increment the left 
                 }
                 left++;
             }

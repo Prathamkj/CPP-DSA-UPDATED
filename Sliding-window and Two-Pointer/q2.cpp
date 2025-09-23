@@ -26,6 +26,7 @@ public:
             else{
                 st.erase(s[left]);
                 // erasing the elements from the left
+                // erasing elements by erase function in stl cpp
                 // and increment the left 
                 left++;
             }
@@ -52,6 +53,7 @@ class Solution {
             }
             else{
                 set.remove(s.charAt(left));
+                // in java we use remove function to erase the element
                 left++;
             }
         }

@@ -12,8 +12,10 @@ public:
                     if(nums[i] + nums[j] + nums[k] == 0){
                         // if sum is equal to zero then we will create a vector
                         vector<int> triplet = {nums[i], nums[j], nums[k]};
+                        // Make a triplet of the array values that sum is equal to zero
                         // storing all the values into the vector
                         sort(triplet.begin(), triplet.end());
+                        // sort the triplets and store it to the set
                         // finally set will remove all the duplicates values
                         // and give triplet to the ans vector
                         st.insert(triplet);
@@ -26,7 +28,7 @@ public:
 
     }
 };
-// Syntatically different solution but same
+// Syntactically different solution but same
 class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
@@ -64,7 +66,7 @@ class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
         set<vector<int>> st;  // to avoid duplicate triplets
-        
+        // by using set we can easily avoid duplicates
         for(int i = 0; i < nums.size(); i++) {
             set<int> hashset;  // to store values seen so far for current i
             for(int j = i + 1; j < nums.size(); j++) {
@@ -73,6 +75,7 @@ public:
                     // if the third value is found in hashset then we will create a triplet
                     // and insert it into the set to avoid duplicates
                     vector<int> temp = {nums[i], nums[j], third};
+                    // then we will do the same procedure that we did for the 0(n^3) approach
                     sort(temp.begin(), temp.end());
                     st.insert(temp);  // insert sorted triplet to avoid duplicates
                 }
