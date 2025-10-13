@@ -32,6 +32,8 @@ public:
         vector<vector<int>> ans;
 
         int total = 1 << n; // 2^n subsets
+        // total subsets will be 2^n and we can write it like 1 << n;
+        // mask means 
         for (int mask = 0; mask < total; mask++) {
             vector<int> subset;
             for (int i = 0; i < n; i++) {
