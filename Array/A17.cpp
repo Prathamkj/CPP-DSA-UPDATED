@@ -29,7 +29,7 @@ This is for Rotate the array to the left by d elements.
 void rotateRight(vector<int>& arr, int d) {
     int n = arr.size();
     d = d % n; // handle d > n
-
+    // by this we will get the d value here
     if (d == 0) return;
 
     // Step 1: Reverse last n-d elements → arr.begin()+d to arr.end()

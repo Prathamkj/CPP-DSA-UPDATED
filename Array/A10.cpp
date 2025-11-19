@@ -44,7 +44,6 @@ public:
                         triplet.push_back(nums[i]);
                         triplet.push_back(nums[j]);
                         triplet.push_back(nums[k]);
-
                         sort(triplet.begin(), triplet.end()); // Sort to avoid duplicates
                         st.insert(triplet);                   // Insert into set
                     }
