@@ -1,6 +1,12 @@
 // INSERTION SORT
 #include <iostream>
 using namespace std;
+/*
+    Here we will start from the second element and compare with the previous value 
+    and shift it
+    -- Here we will do the shifting not the swapping
+
+*/
 
 void InsertionSort(int array[], int n){
     for(int i = 1; i < n; i++){
@@ -10,6 +16,8 @@ void InsertionSort(int array[], int n){
         int previous = i-1;
         // This while loop willl run backwards
         while(previous >= 0 && array[previous] > current){
+            // previous value agar current se badi hai toh 
+            // previous ko shift kardo aage and waha current ko le aao
             array[previous + 1] = array[previous];
             previous = previous - 1;
         }
