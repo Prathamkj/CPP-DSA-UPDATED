@@ -1,7 +1,8 @@
 Amstrong Number 
 #include <iostream>
 using namespace std;
-// cube karne ke baad bhi whi number same aaya 
+// Amstrong Number -- Digit ke har number ka cube ka sum is equal to the real number 
+// 
 int main() {
     int num, temp, sum = 0, digit;
 

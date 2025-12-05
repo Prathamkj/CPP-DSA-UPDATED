@@ -25,9 +25,11 @@ public:
 class Solution {
 public:
  int reverse(int x) {
+    // in this fnc we will do the reversing task
         int revNo = 0;
         while(x != 0){
             int digit = x % 10;
+            // pick up the last element
             if(revNo > INT_MAX/10 || revNo < INT_MIN/10){
                 return 0;
             }
@@ -43,5 +45,6 @@ public:
         }
         int revNo = reverse(x);
         return x == revNo;
+        // if x == revNo then return true then , return false
     }
 };
