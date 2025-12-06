@@ -10,7 +10,7 @@ class Solution {
                curr->next = prev;
                prev = curr;
                curr = forward;
-            }
+            } 
             // in last previous will be the head of the linkedlist
             // so that's why we are returning previous
             return prev;        

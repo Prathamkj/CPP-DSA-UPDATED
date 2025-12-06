@@ -8,8 +8,10 @@ public:
         int n = mat[0].size();
         int srow = 0;
         int scol = 0;
+        // This is for start row and column
         int erow = m-1;
         int ecol = n-1;
+        // This is for end row and end column
         vector<int> ans;
         while(srow <= erow && scol <= ecol){
             // top

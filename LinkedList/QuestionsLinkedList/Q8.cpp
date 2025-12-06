@@ -1,6 +1,5 @@
 142. Linked List Cycle II
 
-
 class Solution {
  public:
   ListNode* detectCycle(ListNode* head) {

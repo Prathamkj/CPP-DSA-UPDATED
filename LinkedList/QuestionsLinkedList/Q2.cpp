@@ -11,19 +11,19 @@ public:
         return len;
     }
     ListNode* middleNode(ListNode* head) {
-            int len = length(head);
-            // here we have taken the length of the linkedlist
-            int ans = (len / 2);
-            // ans baneyenge len/2
-            int cnt = 0;
-            ListNode* temp = head;
+        int len = length(head);
+        // here we have taken the length of the linkedlist
+        int ans = (len / 2);
+        // ans baneyenge len/2
+        int cnt = 0;
+        ListNode* temp = head;
     
-            while (cnt < ans) {
-                temp = temp->next;
-                cnt++;
-            }
-            return temp;
+        while (cnt < ans) {
+            temp = temp->next;
+            cnt++;
         }
+        return temp;
+    }
 };
 // with for loop 
 class Solution {

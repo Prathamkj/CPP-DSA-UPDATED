@@ -14,7 +14,6 @@ class Solution {
         }
         return cnt;
     }
-
     // Function to find the length of a loop in the linked list.
     int countNodesinLoop(Node *head) {
         Node* slow = head;
@@ -28,7 +27,6 @@ class Solution {
                 return countLoopLength(slow);
             }
         }
-
         return 0; // No loop
     }
 };

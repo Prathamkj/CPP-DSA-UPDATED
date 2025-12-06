@@ -35,7 +35,7 @@ public:
                ans.push_back(mp[sec]);
                break;
             }
-            mp[first] = i;
+            mp[nums[i]] = i;
         }
 
         return ans;

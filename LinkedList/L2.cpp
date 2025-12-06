@@ -34,7 +34,7 @@ void print(Node *&head)
 int length(Node *head)
 {
     int len = 0;
-    Node *temp = head;
+    Node* temp = head;
     while (temp != NULL)
     {
         // jab tak temp null nhi hota tab tak temp ko aage next karte raho and
@@ -57,7 +57,7 @@ void insertathead(Node *&head, int data)
     }
     else
     {
-        Node *temp = new Node(data);
+        Node* temp = new Node(data);
         // ek new node banaye
         temp->next = head;
         // temp ke next ko head me dala and head ke previous ko temp me dala
