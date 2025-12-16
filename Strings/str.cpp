@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+#include <bits/stdc++.h>
 #include <string>
 // Actual string
 // in c++ we have inbuild strings
