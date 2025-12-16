@@ -1,4 +1,6 @@
 // Taking Input
+// Important library of all time that includes everthing 
+// #include <bits/stdc++.h>
 #include <iostream>
 // for vector or inbuilt functions we use
 #include <bits/stdc++.h>
@@ -14,7 +16,7 @@ int main(){
     for(int i=0; i<n; i++){
         cin>>arr[i];
     }
-    
+
     // For Vector Input 
     vector<int> arr;
     for(int i=0; i<n; i++){
@@ -62,6 +64,9 @@ int main(){
 
     string temp;
     while(getline(ss, temp, ',')){
+// getline(stream, variable, delimiter);
+// It reads characters until it finds the delimiter ,
+
         // taking input from ss and into temp and on the basis of coma ,
         // if comma ki gajah space ho toh
         // it will be space seprated values
@@ -75,7 +80,33 @@ int main(){
         cout<<a<<" ";
     }
 
+    
+    // Also alternate codee---  
 
+    string s;
+    getline(cin, s);   // Read full line: e.g. "1,2,3,4,5,6"
+
+    stringstream ss(s);
+    vector<int> arr;
+    string temp;
+
+    // Extract values separated by commas
+    while (getline(ss, temp, ',')) {
+        // Remove leading/trailing spaces (optional but safe)
+        stringstream val(temp);
+        int num;
+        val >> num;     // converts string to int safely
+        arr.push_back(num);
+    }
+
+    // Print output
+    for (int x : arr) {
+        cout << x << " ";
+    }
+    
+
+
+    
     // If input is given like 
     // [1,2,3,4,5,6] or 
     // {1,2,3,4,5,6}
@@ -89,17 +120,6 @@ int main(){
 
     }
     // now rest of things work as same
-
-
-
-
-
-
-
-
-
-
-
     // Printing the Array
     for(auto val : arr){
         cout<<val<<" ";
