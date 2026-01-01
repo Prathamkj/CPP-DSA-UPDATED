@@ -84,9 +84,10 @@ int diagonalSum(int arr[4][4] , int n){
                 diagonalSum = diagonalSum + array[i][j];
             }
             else if(j == n-i-1){
+                // j == n-i-1 
                 // for secondary diagonal
-                diagonalSum = diagonalSum + array[i][j]
-
+                diagonalSum = diagonalSum + array[i][j];
+                
             }
         }
     }

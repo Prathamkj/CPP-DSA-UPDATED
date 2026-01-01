@@ -3,7 +3,7 @@ using namespace std;
 int main(){
 
     // 2d Array define
-    int arr[4][3] = {{1,2,3} , {4,3,6}, {4,6,9}, {4,10,11}};
+    int arr[4][3] = {{1,2,3} , {4,3,6}, {4,6,9}, {4,10,11}};    
     // individual row ko  individual array 
     // 4 row and 3 column
     int rows = 4;
