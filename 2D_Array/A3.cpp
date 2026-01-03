@@ -49,7 +49,7 @@ public:
             
             }
             else{
-                // target < matrix[mid][o] 
+                // target < matrix[mid][0] 
                 e = mid -1;
             }
         }
