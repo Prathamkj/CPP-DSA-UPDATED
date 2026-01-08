@@ -8,8 +8,10 @@ public:
             row.push_back(1);  // First element is always 1
 
             for(int j = 1; j < i; j++) {
+                // here we are taking it as the ith pattern 
                 // Compute the inner elements
                 int val = ans[i-1][j-1] + ans[i-1][j];
+                // current = upper-left + upper-right
                 row.push_back(val);
             }
 

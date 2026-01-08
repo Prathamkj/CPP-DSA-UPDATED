@@ -13,7 +13,7 @@ public:
             while(st <= end){
                 int mid = st + (end - st) / 2;
                 int row = mid/m;
-                int col = mid%m;
+                int col = mid%m; 
                 if(matrix[row][col] == target){
                     return true;
                 }

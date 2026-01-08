@@ -36,12 +36,14 @@ public:
         int e = n -1;
         while(st<=e){
             int mid = st + (e - st)/2;
-            if(matrix[mid][0] <= target && matrix[mid][n-1] >= target){
+            if(matrix[mid][0] <= target && matrix[mid][n-1] >= target){    
+                // mid row ke starting se mid row ke end tak that's why we wrote 
+                // mid and 0 , mid and n - 1, for first and last index...
                 // Here we are Taking About the Mid Row in the Matrix
                 // starting mid of the row from starting coln to ending coln
                 // found the row and applying bs on it
                 return searchINrow(matrix , target , mid);
-
+                
             }
             else if(matrix[mid][n-1] < target){
                 st = mid + 1;
@@ -73,6 +75,8 @@ public:
             // by this we will get the index of the row
             // by this we will get the index of the coln
             int column = mid % m;
+            // so here we need to divide it by the column size 
+            // for both row and column
             // just divide and modulo by the coln sizeeee
             // by this method we are getting the parameters of the mid ( , )
             if(matrix[row][column] == target){
